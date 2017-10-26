@@ -10,9 +10,9 @@ script, phrase = argv
 words = phrase.split()
 
 def cleanhtml(rawHtml):
-  cleanr = re.compile('<.*?>')
-  cleantext = re.sub(cleanr, '', rawHtml)
-  return cleantext
+  cleanR = re.compile('<.*?>')
+  cleanText = re.sub(cleanR, '', rawHtml)
+  return cleanText
 
 def getSynonym(word):
     cleanSynonyms = []
